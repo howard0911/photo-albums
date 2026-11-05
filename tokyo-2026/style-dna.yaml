@@ -1,0 +1,59 @@
+# Style DNA — Echigo-Yuzawa + Tokyo, February 2026  (final, confirmed with Howard)
+# Sources: .dna/contact.jpg numbers / file names, .dna/dna-seed.json, or Howard's answers.
+
+trip: "February: from the snow of Echigo-Yuzawa to Tokyo's first cherry blossoms, and the lit-up winter nights"   # Q1: draft accepted
+place: Echigo-Yuzawa (Niigata) + Tokyo, Japan
+language: English + one Japanese kanji per chapter (雪 社 桜 鏡 麺 灯)   # Q1
+evidence:   # analyze_photos.py on the 35 picks (from 380 Canon R50 frames)
+  tone: mid / contrast: normal / chroma: moderate / temperature: cool
+  hue_spread: varied, dominant_hue: 242° / night_share: .37 / portrait_share: .51
+  accent_candidates: yuzawa-sky #1F78E0 (212°, img-1856), ramen-chili #C3612D (21°, img-2033), takeshita-arch #910B4B (331°, img-2053)
+  measured by hand: kawazu-zakura pink #94404C (351°, s .57) — densest in img-2082; also img-2066 2070 2071 2079 1985
+  motifs (contact.jpg): snow under hard blue sky (01–05, 08); early cherry blossom against blue (13, 19–24);
+    Tokyo Tower in most Tokyo chapters (19–23, 25, 27–30); glass and reflections (16, 17, 31, 32); bowls (06, 07, 14, 15, 33, 35)
+
+color:      # Q3: direction A "Hatsuzakura"
+  paper: "#F5F7FA"   # temperature cool → paper leans cool (paper_light #F6F9FC); the snow of 01–05
+  ink: "#14151B"
+  accent: "#D63C58"  # kawazu-zakura #94404C (351°) lifted → 349° (−2°); 4.2:1 on paper.
+                     # Tokyo Tower's red-orange rejected: it is JAPAN's own accent (14°). Yuzawa sky blue kept as riso's second ink instead
+  on_accent: "#F5F7FA"
+type:
+  display: Zen Old Mincho 900, case: upper (--case uppercase, upper:true), thicken .03
+  cjk: Zen Old Mincho (kanji second voice, same family)
+  why: mincho is the type of sake labels (08, the ponshu-kan wall), shrine plaques and menus
+hero: { word: TOKYO, sub: "Travel / 26 / 02", line: "Yuzawa · Ueno · Omotesando · Shiba · Roppongi · Ginza · Shibuya" }
+motion:
+  character: 漂浮 (snow and petals) — temperature cool, a slow winter trip
+  drift: .0012  follow: .04  spring: .025  damp: .92  repel: 85  gather: 1400  develop: 2000
+  ease: cubic-bezier(.3,0,.15,1)
+texture:
+  dots: petal         # small tilted ellipses on a golden-angle spread, tipping further when pushed
+  styles: [orig, riso, sumi, block]
+    # riso: sakura pink + Yuzawa sky blue (#1F78E0, img-1856), two drums off-register, grain;
+    # sumi: Sobel edges in ink + two pale washes in the shadows, blue sky left as bare paper; block: k-means palette
+sound:
+  scale: "[0,2,5,7,9] yo scale"   # Japanese folk pentatonic, no semitones — bright and open (JAPAN uses miyako-bushi)
+  base: 64
+  presence: 1                     # Q4: default
+  new instruments: V.flute (breathy bamboo), V.suzu (shrine bells), V.uguisu (bush warbler), V.piyo (Shibuya crossing chirp), V.musicbox
+  measured peaks (median of 3, viewer open): Snow .156 · Shrine .113 · First bloom .124 · Glass .147 · Bowls .118 · Lights .133
+chapters:   # Q2: accepted as proposed
+  - { en: Snow,        zh: 雪, photos: [02, 01, 03, 04, 05, 08], ambient: "mountain wind + slow flute phrases",            voice: flute }
+  - { en: Shrine,      zh: 社, photos: [09, 10, 11, 12, 13],     ambient: "low hall hum + temple bell, suzu, sparse koto",  voice: soft bell }
+  - { en: First bloom, zh: 桜, photos: [24, 19, 20, 21, 22, 23], ambient: "breeze + koto arpeggios + bush warbler",        voice: koto }
+  - { en: Glass,       zh: 鏡, photos: [16, 17, 31, 32, 18, 34], ambient: "crowd + soft synth eighths + crossing chirp",  voice: soft synth }
+  - { en: Bowls,       zh: 麺, photos: [06, 07, 15, 14, 33, 35], ambient: "sizzle + wood blocks + plucked bass, 92 BPM",  voice: wood }
+  - { en: Lights,      zh: 灯, photos: [25, 26, 27, 28, 29, 30], ambient: "pale pad + shimmer + music-box waltz",         voice: music box }
+swaps: []
+
+anti_collision_vs_JAPAN:   # need ≥4 different; photos are also a Japanese city, so motif and accent must differ too → 8 of 8
+  paper: "#F5F7FA cool vs #FFFBF7 warm ✔"
+  accent hue: "349° sakura pink vs 14° tower orange ✔"
+  display: "Zen Old Mincho vs Archivo wide grotesque ✔"
+  motion: "漂浮 vs 利落 ✔"
+  dots: "petal vs circle ✔"
+  styles: "riso / sumi vs ink / halftone ✔"
+  scale: "yo vs miyako-bushi ✔"
+  instruments: "flute / suzu / music box vs synth / FM bell / keys ✔"
+  motif & chapters: "snow → first blossom (season) vs towers → neon (city)"

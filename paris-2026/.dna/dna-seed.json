@@ -1,0 +1,2827 @@
+{
+ "summary": {
+  "count": 34,
+  "tone": "mid",
+  "contrast": "normal",
+  "chroma": "moderate",
+  "temperature": "neutral",
+  "hue_spread": "varied",
+  "dominant_hue": 15,
+  "night_share": 0.35,
+  "portrait_share": 0.5,
+  "raw": {
+   "luminance": 0.38,
+   "saturation": 0.144,
+   "warmth": 0.026,
+   "hue_concentration": 0.247
+  }
+ },
+ "accent_candidates": [
+  {
+   "hex": "#E82525",
+   "from": "img-2753",
+   "hue": 0,
+   "chroma": 0.765,
+   "share": 0.175,
+   "score": 0.333
+  },
+  {
+   "hex": "#346DC1",
+   "from": "img-2561",
+   "hue": 216,
+   "chroma": 0.553,
+   "share": 0.279,
+   "score": 0.2
+  },
+  {
+   "hex": "#D78541",
+   "from": "img-2524",
+   "hue": 27,
+   "chroma": 0.588,
+   "share": 0.054,
+   "score": 0.156
+  },
+  {
+   "hex": "#7C9E46",
+   "from": "img-2576",
+   "hue": 83,
+   "chroma": 0.345,
+   "share": 0.058,
+   "score": 0.054
+  }
+ ],
+ "paper_ink": {
+  "paper_light": "#FAFAF8",
+  "ink": "#121212",
+  "paper_dark_option": "#121212",
+  "ink_on_dark_option": "#FAFAF8"
+ },
+ "chapter_draft_by_color": [
+  [
+   "img-2570",
+   "img-2624",
+   "img-2706",
+   "img-2707"
+  ],
+  [
+   "img-2530",
+   "img-2535",
+   "img-2543",
+   "img-2561"
+  ],
+  [
+   "img-2485",
+   "img-2669"
+  ],
+  [
+   "img-2440",
+   "img-2488",
+   "img-2524",
+   "img-2544",
+   "img-2546",
+   "img-2574",
+   "img-2576",
+   "img-2585",
+   "img-2600",
+   "img-2627",
+   "img-2637",
+   "img-2640",
+   "img-2652",
+   "img-2708",
+   "img-2712",
+   "img-2753"
+  ],
+  [
+   "img-2452"
+  ],
+  [
+   "img-2475",
+   "img-2504",
+   "img-2508",
+   "img-2716",
+   "img-2784"
+  ],
+  [
+   "img-2527",
+   "img-2700"
+  ]
+ ],
+ "photos": [
+  {
+   "file": "img-2440.jpg",
+   "src": "img-2440",
+   "w": 1600,
+   "h": 1067,
+   "orientation": "landscape",
+   "palette": [
+    {
+     "hex": "#9E9EA1",
+     "rgb": [
+      158,
+      158,
+      161
+     ],
+     "share": 0.288
+    },
+    {
+     "hex": "#88706C",
+     "rgb": [
+      136,
+      112,
+      108
+     ],
+     "share": 0.2
+    },
+    {
+     "hex": "#5D4846",
+     "rgb": [
+      93,
+      72,
+      70
+     ],
+     "share": 0.196
+    },
+    {
+     "hex": "#242125",
+     "rgb": [
+      36,
+      33,
+      37
+     ],
+     "share": 0.192
+    },
+    {
+     "hex": "#C8C8C8",
+     "rgb": [
+      200,
+      200,
+      200
+     ],
+     "share": 0.125
+    }
+   ],
+   "luminance": 0.456,
+   "contrast": 0.22,
+   "saturation": 0.088,
+   "warmth": 0.036,
+   "hue": 7,
+   "hue_concentration": 0.765,
+   "night_guess": false,
+   "vivid_spots": [
+    {
+     "hex": "#923B31",
+     "rgb": [
+      146,
+      59,
+      49
+     ],
+     "share": 0.028
+    },
+    {
+     "hex": "#BB5E4C",
+     "rgb": [
+      187,
+      94,
+      76
+     ],
+     "share": 0.028
+    },
+    {
+     "hex": "#3A679D",
+     "rgb": [
+      58,
+      103,
+      157
+     ],
+     "share": 0.002
+    }
+   ]
+  },
+  {
+   "file": "img-2452.jpg",
+   "src": "img-2452",
+   "w": 1600,
+   "h": 1067,
+   "orientation": "landscape",
+   "palette": [
+    {
+     "hex": "#CFD5DD",
+     "rgb": [
+      207,
+      213,
+      221
+     ],
+     "share": 0.261
+    },
+    {
+     "hex": "#2E2520",
+     "rgb": [
+      46,
+      37,
+      32
+     ],
+     "share": 0.239
+    },
+    {
+     "hex": "#AFB3B9",
+     "rgb": [
+      175,
+      179,
+      185
+     ],
+     "share": 0.199
+    },
+    {
+     "hex": "#949495",
+     "rgb": [
+      148,
+      148,
+      149
+     ],
+     "share": 0.156
+    },
+    {
+     "hex": "#483F37",
+     "rgb": [
+      72,
+      63,
+      55
+     ],
+     "share": 0.144
+    }
+   ],
+   "luminance": 0.521,
+   "contrast": 0.276,
+   "saturation": 0.048,
+   "warmth": 0.0,
+   "hue": 25,
+   "hue_concentration": 1.0,
+   "night_guess": false,
+   "vivid_spots": []
+  },
+  {
+   "file": "img-2475.jpg",
+   "src": "img-2475",
+   "w": 1067,
+   "h": 1600,
+   "orientation": "portrait",
+   "palette": [
+    {
+     "hex": "#423830",
+     "rgb": [
+      66,
+      56,
+      48
+     ],
+     "share": 0.272
+    },
+    {
+     "hex": "#828386",
+     "rgb": [
+      130,
+      131,
+      134
+     ],
+     "share": 0.206
+    },
+    {
+     "hex": "#A5A7AC",
+     "rgb": [
+      165,
+      167,
+      172
+     ],
+     "share": 0.191
+    },
+    {
+     "hex": "#63605F",
+     "rgb": [
+      99,
+      96,
+      95
+     ],
+     "share": 0.186
+    },
+    {
+     "hex": "#15110E",
+     "rgb": [
+      21,
+      17,
+      14
+     ],
+     "share": 0.145
+    }
+   ],
+   "luminance": 0.373,
+   "contrast": 0.2,
+   "saturation": 0.037,
+   "warmth": 0.018,
+   "hue": 28,
+   "hue_concentration": 0.999,
+   "night_guess": false,
+   "vivid_spots": []
+  },
+  {
+   "file": "img-2485.jpg",
+   "src": "img-2485",
+   "w": 1067,
+   "h": 1600,
+   "orientation": "portrait",
+   "palette": [
+    {
+     "hex": "#8C8377",
+     "rgb": [
+      140,
+      131,
+      119
+     ],
+     "share": 0.297
+    },
+    {
+     "hex": "#73695F",
+     "rgb": [
+      115,
+      105,
+      95
+     ],
+     "share": 0.255
+    },
+    {
+     "hex": "#A19A8F",
+     "rgb": [
+      161,
+      154,
+      143
+     ],
+     "share": 0.223
+    },
+    {
+     "hex": "#494C57",
+     "rgb": [
+      73,
+      76,
+      87
+     ],
+     "share": 0.142
+    },
+    {
+     "hex": "#5E6F93",
+     "rgb": [
+      94,
+      111,
+      147
+     ],
+     "share": 0.083
+    }
+   ],
+   "luminance": 0.473,
+   "contrast": 0.104,
+   "saturation": 0.092,
+   "warmth": 0.033,
+   "hue": 225,
+   "hue_concentration": 0.531,
+   "night_guess": false,
+   "vivid_spots": []
+  },
+  {
+   "file": "img-2488.jpg",
+   "src": "img-2488",
+   "w": 1067,
+   "h": 1600,
+   "orientation": "portrait",
+   "palette": [
+    {
+     "hex": "#BDBEC7",
+     "rgb": [
+      189,
+      190,
+      199
+     ],
+     "share": 0.328
+    },
+    {
+     "hex": "#2D2932",
+     "rgb": [
+      45,
+      41,
+      50
+     ],
+     "share": 0.225
+    },
+    {
+     "hex": "#886C57",
+     "rgb": [
+      136,
+      108,
+      87
+     ],
+     "share": 0.161
+    },
+    {
+     "hex": "#683F35",
+     "rgb": [
+      104,
+      63,
+      53
+     ],
+     "share": 0.156
+    },
+    {
+     "hex": "#AD9471",
+     "rgb": [
+      173,
+      148,
+      113
+     ],
+     "share": 0.129
+    }
+   ],
+   "luminance": 0.475,
+   "contrast": 0.233,
+   "saturation": 0.128,
+   "warmth": 0.075,
+   "hue": 15,
+   "hue_concentration": 0.636,
+   "night_guess": false,
+   "vivid_spots": [
+    {
+     "hex": "#8C603C",
+     "rgb": [
+      140,
+      96,
+      60
+     ],
+     "share": 0.048
+    },
+    {
+     "hex": "#841F15",
+     "rgb": [
+      132,
+      31,
+      21
+     ],
+     "share": 0.028
+    },
+    {
+     "hex": "#B18A53",
+     "rgb": [
+      177,
+      138,
+      83
+     ],
+     "share": 0.028
+    }
+   ]
+  },
+  {
+   "file": "img-2504.jpg",
+   "src": "img-2504",
+   "w": 1067,
+   "h": 1600,
+   "orientation": "portrait",
+   "palette": [
+    {
+     "hex": "#4D453D",
+     "rgb": [
+      77,
+      69,
+      61
+     ],
+     "share": 0.253
+    },
+    {
+     "hex": "#362E26",
+     "rgb": [
+      54,
+      46,
+      38
+     ],
+     "share": 0.213
+    },
+    {
+     "hex": "#63605E",
+     "rgb": [
+      99,
+      96,
+      94
+     ],
+     "share": 0.192
+    },
+    {
+     "hex": "#A1A4AA",
+     "rgb": [
+      161,
+      164,
+      170
+     ],
+     "share": 0.177
+    },
+    {
+     "hex": "#7F8083",
+     "rgb": [
+      127,
+      128,
+      131
+     ],
+     "share": 0.164
+    }
+   ],
+   "luminance": 0.381,
+   "contrast": 0.163,
+   "saturation": 0.044,
+   "warmth": 0.025,
+   "hue": 30,
+   "hue_concentration": 0.968,
+   "night_guess": false,
+   "vivid_spots": []
+  },
+  {
+   "file": "img-2508.jpg",
+   "src": "img-2508",
+   "w": 1600,
+   "h": 1067,
+   "orientation": "landscape",
+   "palette": [
+    {
+     "hex": "#16100D",
+     "rgb": [
+      22,
+      16,
+      13
+     ],
+     "share": 0.281
+    },
+    {
+     "hex": "#393633",
+     "rgb": [
+      57,
+      54,
+      51
+     ],
+     "share": 0.204
+    },
+    {
+     "hex": "#959496",
+     "rgb": [
+      149,
+      148,
+      150
+     ],
+     "share": 0.193
+    },
+    {
+     "hex": "#B7B8BC",
+     "rgb": [
+      183,
+      184,
+      188
+     ],
+     "share": 0.18
+    },
+    {
+     "hex": "#6C6A68",
+     "rgb": [
+      108,
+      106,
+      104
+     ],
+     "share": 0.142
+    }
+   ],
+   "luminance": 0.367,
+   "contrast": 0.253,
+   "saturation": 0.025,
+   "warmth": 0.013,
+   "hue": 27,
+   "hue_concentration": 0.999,
+   "night_guess": false,
+   "vivid_spots": []
+  },
+  {
+   "file": "img-2524.jpg",
+   "src": "img-2524",
+   "w": 1600,
+   "h": 1067,
+   "orientation": "landscape",
+   "palette": [
+    {
+     "hex": "#1A1C19",
+     "rgb": [
+      26,
+      28,
+      25
+     ],
+     "share": 0.305
+    },
+    {
+     "hex": "#454241",
+     "rgb": [
+      69,
+      66,
+      65
+     ],
+     "share": 0.266
+    },
+    {
+     "hex": "#B2693C",
+     "rgb": [
+      178,
+      105,
+      60
+     ],
+     "share": 0.177
+    },
+    {
+     "hex": "#7A7D84",
+     "rgb": [
+      122,
+      125,
+      132
+     ],
+     "share": 0.176
+    },
+    {
+     "hex": "#E4E3DB",
+     "rgb": [
+      228,
+      227,
+      219
+     ],
+     "share": 0.074
+    }
+   ],
+   "luminance": 0.342,
+   "contrast": 0.23,
+   "saturation": 0.172,
+   "warmth": 0.085,
+   "hue": 23,
+   "hue_concentration": 0.466,
+   "night_guess": true,
+   "vivid_spots": [
+    {
+     "hex": "#A2481D",
+     "rgb": [
+      162,
+      72,
+      29
+     ],
+     "share": 0.076
+    },
+    {
+     "hex": "#D78541",
+     "rgb": [
+      215,
+      133,
+      65
+     ],
+     "share": 0.054
+    },
+    {
+     "hex": "#39669B",
+     "rgb": [
+      57,
+      102,
+      155
+     ],
+     "share": 0.02
+    }
+   ]
+  },
+  {
+   "file": "img-2527.jpg",
+   "src": "img-2527",
+   "w": 1067,
+   "h": 1600,
+   "orientation": "portrait",
+   "palette": [
+    {
+     "hex": "#040503",
+     "rgb": [
+      4,
+      5,
+      3
+     ],
+     "share": 0.379
+    },
+    {
+     "hex": "#556681",
+     "rgb": [
+      85,
+      102,
+      129
+     ],
+     "share": 0.229
+    },
+    {
+     "hex": "#838D9F",
+     "rgb": [
+      131,
+      141,
+      159
+     ],
+     "share": 0.155
+    },
+    {
+     "hex": "#1F2021",
+     "rgb": [
+      31,
+      32,
+      33
+     ],
+     "share": 0.127
+    },
+    {
+     "hex": "#414449",
+     "rgb": [
+      65,
+      68,
+      73
+     ],
+     "share": 0.109
+    }
+   ],
+   "luminance": 0.227,
+   "contrast": 0.206,
+   "saturation": 0.068,
+   "warmth": -0.06,
+   "hue": 216,
+   "hue_concentration": 1.0,
+   "night_guess": true,
+   "vivid_spots": []
+  },
+  {
+   "file": "img-2530.jpg",
+   "src": "img-2530",
+   "w": 1067,
+   "h": 1600,
+   "orientation": "portrait",
+   "palette": [
+    {
+     "hex": "#0A0908",
+     "rgb": [
+      10,
+      9,
+      8
+     ],
+     "share": 0.266
+    },
+    {
+     "hex": "#263F5F",
+     "rgb": [
+      38,
+      63,
+      95
+     ],
+     "share": 0.252
+    },
+    {
+     "hex": "#475F84",
+     "rgb": [
+      71,
+      95,
+      132
+     ],
+     "share": 0.184
+    },
+    {
+     "hex": "#7C8BA3",
+     "rgb": [
+      124,
+      139,
+      163
+     ],
+     "share": 0.153
+    },
+    {
+     "hex": "#C4C3BC",
+     "rgb": [
+      196,
+      195,
+      188
+     ],
+     "share": 0.144
+    }
+   ],
+   "luminance": 0.329,
+   "contrast": 0.249,
+   "saturation": 0.147,
+   "warmth": -0.117,
+   "hue": 215,
+   "hue_concentration": 0.9,
+   "night_guess": true,
+   "vivid_spots": [
+    {
+     "hex": "#2F4C76",
+     "rgb": [
+      47,
+      76,
+      118
+     ],
+     "share": 0.037
+    },
+    {
+     "hex": "#37537C",
+     "rgb": [
+      55,
+      83,
+      124
+     ],
+     "share": 0.036
+    },
+    {
+     "hex": "#3F5A83",
+     "rgb": [
+      63,
+      90,
+      131
+     ],
+     "share": 0.032
+    }
+   ]
+  },
+  {
+   "file": "img-2535.jpg",
+   "src": "img-2535",
+   "w": 1067,
+   "h": 1600,
+   "orientation": "portrait",
+   "palette": [
+    {
+     "hex": "#1F3A61",
+     "rgb": [
+      31,
+      58,
+      97
+     ],
+     "share": 0.297
+    },
+    {
+     "hex": "#080705",
+     "rgb": [
+      8,
+      7,
+      5
+     ],
+     "share": 0.28
+    },
+    {
+     "hex": "#647392",
+     "rgb": [
+      100,
+      115,
+      146
+     ],
+     "share": 0.185
+    },
+    {
+     "hex": "#BDBDBD",
+     "rgb": [
+      189,
+      189,
+      189
+     ],
+     "share": 0.161
+    },
+    {
+     "hex": "#4A312B",
+     "rgb": [
+      74,
+      49,
+      43
+     ],
+     "share": 0.076
+    }
+   ],
+   "luminance": 0.291,
+   "contrast": 0.251,
+   "saturation": 0.142,
+   "warmth": -0.097,
+   "hue": 219,
+   "hue_concentration": 0.801,
+   "night_guess": true,
+   "vivid_spots": [
+    {
+     "hex": "#344D77",
+     "rgb": [
+      52,
+      77,
+      119
+     ],
+     "share": 0.034
+    },
+    {
+     "hex": "#3C557F",
+     "rgb": [
+      60,
+      85,
+      127
+     ],
+     "share": 0.024
+    },
+    {
+     "hex": "#7D4834",
+     "rgb": [
+      125,
+      72,
+      52
+     ],
+     "share": 0.002
+    }
+   ]
+  },
+  {
+   "file": "img-2543.jpg",
+   "src": "img-2543",
+   "w": 1067,
+   "h": 1600,
+   "orientation": "portrait",
+   "palette": [
+    {
+     "hex": "#1D110B",
+     "rgb": [
+      29,
+      17,
+      11
+     ],
+     "share": 0.306
+    },
+    {
+     "hex": "#072E6A",
+     "rgb": [
+      7,
+      46,
+      106
+     ],
+     "share": 0.253
+    },
+    {
+     "hex": "#12499D",
+     "rgb": [
+      18,
+      73,
+      157
+     ],
+     "share": 0.19
+    },
+    {
+     "hex": "#587AC4",
+     "rgb": [
+      88,
+      122,
+      196
+     ],
+     "share": 0.13
+    },
+    {
+     "hex": "#BCA394",
+     "rgb": [
+      188,
+      163,
+      148
+     ],
+     "share": 0.121
+    }
+   ],
+   "luminance": 0.257,
+   "contrast": 0.213,
+   "saturation": 0.312,
+   "warmth": -0.215,
+   "hue": 220,
+   "hue_concentration": 0.74,
+   "night_guess": true,
+   "vivid_spots": [
+    {
+     "hex": "#083E8E",
+     "rgb": [
+      8,
+      62,
+      142
+     ],
+     "share": 0.229
+    },
+    {
+     "hex": "#3D69BE",
+     "rgb": [
+      61,
+      105,
+      190
+     ],
+     "share": 0.128
+    },
+    {
+     "hex": "#AA6628",
+     "rgb": [
+      170,
+      102,
+      40
+     ],
+     "share": 0.048
+    }
+   ]
+  },
+  {
+   "file": "img-2544.jpg",
+   "src": "img-2544",
+   "w": 1600,
+   "h": 1067,
+   "orientation": "landscape",
+   "palette": [
+    {
+     "hex": "#1E1E20",
+     "rgb": [
+      30,
+      30,
+      32
+     ],
+     "share": 0.304
+    },
+    {
+     "hex": "#B37248",
+     "rgb": [
+      179,
+      114,
+      72
+     ],
+     "share": 0.245
+    },
+    {
+     "hex": "#714435",
+     "rgb": [
+      113,
+      68,
+      53
+     ],
+     "share": 0.197
+    },
+    {
+     "hex": "#2A3C46",
+     "rgb": [
+      42,
+      60,
+      70
+     ],
+     "share": 0.131
+    },
+    {
+     "hex": "#B6A795",
+     "rgb": [
+      182,
+      167,
+      149
+     ],
+     "share": 0.122
+    }
+   ],
+   "luminance": 0.333,
+   "contrast": 0.201,
+   "saturation": 0.21,
+   "warmth": 0.148,
+   "hue": 19,
+   "hue_concentration": 0.676,
+   "night_guess": true,
+   "vivid_spots": [
+    {
+     "hex": "#B36636",
+     "rgb": [
+      179,
+      102,
+      54
+     ],
+     "share": 0.116
+    },
+    {
+     "hex": "#854B32",
+     "rgb": [
+      133,
+      75,
+      50
+     ],
+     "share": 0.085
+    },
+    {
+     "hex": "#CC8F56",
+     "rgb": [
+      204,
+      143,
+      86
+     ],
+     "share": 0.07
+    }
+   ]
+  },
+  {
+   "file": "img-2546.jpg",
+   "src": "img-2546",
+   "w": 1600,
+   "h": 1067,
+   "orientation": "landscape",
+   "palette": [
+    {
+     "hex": "#17171A",
+     "rgb": [
+      23,
+      23,
+      26
+     ],
+     "share": 0.286
+    },
+    {
+     "hex": "#A39281",
+     "rgb": [
+      163,
+      146,
+      129
+     ],
+     "share": 0.21
+    },
+    {
+     "hex": "#CBBCA8",
+     "rgb": [
+      203,
+      188,
+      168
+     ],
+     "share": 0.171
+    },
+    {
+     "hex": "#78685C",
+     "rgb": [
+      120,
+      104,
+      92
+     ],
+     "share": 0.169
+    },
+    {
+     "hex": "#433D3D",
+     "rgb": [
+      67,
+      61,
+      61
+     ],
+     "share": 0.163
+    }
+   ],
+   "luminance": 0.39,
+   "contrast": 0.246,
+   "saturation": 0.101,
+   "warmth": 0.07,
+   "hue": 16,
+   "hue_concentration": 0.525,
+   "night_guess": false,
+   "vivid_spots": [
+    {
+     "hex": "#B0604A",
+     "rgb": [
+      176,
+      96,
+      74
+     ],
+     "share": 0.021
+    },
+    {
+     "hex": "#234F8B",
+     "rgb": [
+      35,
+      79,
+      139
+     ],
+     "share": 0.008
+    }
+   ]
+  },
+  {
+   "file": "img-2561.jpg",
+   "src": "img-2561",
+   "w": 1067,
+   "h": 1600,
+   "orientation": "portrait",
+   "palette": [
+    {
+     "hex": "#346DC1",
+     "rgb": [
+      52,
+      109,
+      193
+     ],
+     "share": 0.279
+    },
+    {
+     "hex": "#90877F",
+     "rgb": [
+      144,
+      135,
+      127
+     ],
+     "share": 0.261
+    },
+    {
+     "hex": "#BBBFC5",
+     "rgb": [
+      187,
+      191,
+      197
+     ],
+     "share": 0.216
+    },
+    {
+     "hex": "#403E2D",
+     "rgb": [
+      64,
+      62,
+      45
+     ],
+     "share": 0.172
+    },
+    {
+     "hex": "#7295CC",
+     "rgb": [
+      114,
+      149,
+      204
+     ],
+     "share": 0.072
+    }
+   ],
+   "luminance": 0.494,
+   "contrast": 0.182,
+   "saturation": 0.237,
+   "warmth": -0.158,
+   "hue": 212,
+   "hue_concentration": 0.742,
+   "night_guess": false,
+   "vivid_spots": [
+    {
+     "hex": "#3871C4",
+     "rgb": [
+      56,
+      113,
+      196
+     ],
+     "share": 0.182
+    },
+    {
+     "hex": "#2763B9",
+     "rgb": [
+      39,
+      99,
+      185
+     ],
+     "share": 0.086
+    },
+    {
+     "hex": "#5F85C1",
+     "rgb": [
+      95,
+      133,
+      193
+     ],
+     "share": 0.037
+    }
+   ]
+  },
+  {
+   "file": "img-2570.jpg",
+   "src": "img-2570",
+   "w": 1067,
+   "h": 1600,
+   "orientation": "portrait",
+   "palette": [
+    {
+     "hex": "#2B3F1B",
+     "rgb": [
+      43,
+      63,
+      27
+     ],
+     "share": 0.401
+    },
+    {
+     "hex": "#89BCF5",
+     "rgb": [
+      137,
+      188,
+      245
+     ],
+     "share": 0.259
+    },
+    {
+     "hex": "#CDDAE9",
+     "rgb": [
+      205,
+      218,
+      233
+     ],
+     "share": 0.185
+    },
+    {
+     "hex": "#565352",
+     "rgb": [
+      86,
+      83,
+      82
+     ],
+     "share": 0.092
+    },
+    {
+     "hex": "#8E898B",
+     "rgb": [
+      142,
+      137,
+      139
+     ],
+     "share": 0.064
+    }
+   ],
+   "luminance": 0.488,
+   "contrast": 0.268,
+   "saturation": 0.202,
+   "warmth": -0.1,
+   "hue": 127,
+   "hue_concentration": 0.514,
+   "night_guess": false,
+   "vivid_spots": [
+    {
+     "hex": "#75B1F8",
+     "rgb": [
+      117,
+      177,
+      248
+     ],
+     "share": 0.021
+    },
+    {
+     "hex": "#79B3F8",
+     "rgb": [
+      121,
+      179,
+      248
+     ],
+     "share": 0.016
+    },
+    {
+     "hex": "#6C4B4E",
+     "rgb": [
+      108,
+      75,
+      78
+     ],
+     "share": 0.001
+    }
+   ]
+  },
+  {
+   "file": "img-2574.jpg",
+   "src": "img-2574",
+   "w": 1600,
+   "h": 1067,
+   "orientation": "landscape",
+   "palette": [
+    {
+     "hex": "#9AB4D5",
+     "rgb": [
+      154,
+      180,
+      213
+     ],
+     "share": 0.255
+    },
+    {
+     "hex": "#6C4C46",
+     "rgb": [
+      108,
+      76,
+      70
+     ],
+     "share": 0.254
+    },
+    {
+     "hex": "#9C8381",
+     "rgb": [
+      156,
+      131,
+      129
+     ],
+     "share": 0.18
+    },
+    {
+     "hex": "#301916",
+     "rgb": [
+      48,
+      25,
+      22
+     ],
+     "share": 0.173
+    },
+    {
+     "hex": "#BE2524",
+     "rgb": [
+      190,
+      37,
+      36
+     ],
+     "share": 0.138
+    }
+   ],
+   "luminance": 0.425,
+   "contrast": 0.21,
+   "saturation": 0.233,
+   "warmth": 0.099,
+   "hue": 354,
+   "hue_concentration": 0.612,
+   "night_guess": false,
+   "vivid_spots": [
+    {
+     "hex": "#B33A35",
+     "rgb": [
+      179,
+      58,
+      53
+     ],
+     "share": 0.136
+    },
+    {
+     "hex": "#66A1EB",
+     "rgb": [
+      102,
+      161,
+      235
+     ],
+     "share": 0.062
+    },
+    {
+     "hex": "#9C1011",
+     "rgb": [
+      156,
+      16,
+      17
+     ],
+     "share": 0.061
+    }
+   ]
+  },
+  {
+   "file": "img-2576.jpg",
+   "src": "img-2576",
+   "w": 1600,
+   "h": 1067,
+   "orientation": "landscape",
+   "palette": [
+    {
+     "hex": "#5C5B54",
+     "rgb": [
+      92,
+      91,
+      84
+     ],
+     "share": 0.254
+    },
+    {
+     "hex": "#878B61",
+     "rgb": [
+      135,
+      139,
+      97
+     ],
+     "share": 0.219
+    },
+    {
+     "hex": "#503931",
+     "rgb": [
+      80,
+      57,
+      49
+     ],
+     "share": 0.193
+    },
+    {
+     "hex": "#27231E",
+     "rgb": [
+      39,
+      35,
+      30
+     ],
+     "share": 0.171
+    },
+    {
+     "hex": "#AEBB87",
+     "rgb": [
+      174,
+      187,
+      135
+     ],
+     "share": 0.162
+    }
+   ],
+   "luminance": 0.389,
+   "contrast": 0.191,
+   "saturation": 0.155,
+   "warmth": 0.095,
+   "hue": 59,
+   "hue_concentration": 0.752,
+   "night_guess": false,
+   "vivid_spots": [
+    {
+     "hex": "#7C9E46",
+     "rgb": [
+      124,
+      158,
+      70
+     ],
+     "share": 0.058
+    },
+    {
+     "hex": "#8F131B",
+     "rgb": [
+      143,
+      19,
+      27
+     ],
+     "share": 0.028
+    },
+    {
+     "hex": "#AB5845",
+     "rgb": [
+      171,
+      88,
+      69
+     ],
+     "share": 0.02
+    }
+   ]
+  },
+  {
+   "file": "img-2585.jpg",
+   "src": "img-2585",
+   "w": 1600,
+   "h": 1067,
+   "orientation": "landscape",
+   "palette": [
+    {
+     "hex": "#403635",
+     "rgb": [
+      64,
+      54,
+      53
+     ],
+     "share": 0.279
+    },
+    {
+     "hex": "#1B100E",
+     "rgb": [
+      27,
+      16,
+      14
+     ],
+     "share": 0.188
+    },
+    {
+     "hex": "#7D564B",
+     "rgb": [
+      125,
+      86,
+      75
+     ],
+     "share": 0.186
+    },
+    {
+     "hex": "#9C8D89",
+     "rgb": [
+      156,
+      141,
+      137
+     ],
+     "share": 0.184
+    },
+    {
+     "hex": "#CDD0D5",
+     "rgb": [
+      205,
+      208,
+      213
+     ],
+     "share": 0.163
+    }
+   ],
+   "luminance": 0.385,
+   "contrast": 0.255,
+   "saturation": 0.117,
+   "warmth": 0.066,
+   "hue": 16,
+   "hue_concentration": 0.664,
+   "night_guess": false,
+   "vivid_spots": [
+    {
+     "hex": "#844F32",
+     "rgb": [
+      132,
+      79,
+      50
+     ],
+     "share": 0.03
+    },
+    {
+     "hex": "#B96850",
+     "rgb": [
+      185,
+      104,
+      80
+     ],
+     "share": 0.022
+    },
+    {
+     "hex": "#CB1F1A",
+     "rgb": [
+      203,
+      31,
+      26
+     ],
+     "share": 0.015
+    }
+   ]
+  },
+  {
+   "file": "img-2600.jpg",
+   "src": "img-2600",
+   "w": 1600,
+   "h": 1067,
+   "orientation": "landscape",
+   "palette": [
+    {
+     "hex": "#794F40",
+     "rgb": [
+      121,
+      79,
+      64
+     ],
+     "share": 0.296
+    },
+    {
+     "hex": "#A17D63",
+     "rgb": [
+      161,
+      125,
+      99
+     ],
+     "share": 0.238
+    },
+    {
+     "hex": "#15111B",
+     "rgb": [
+      21,
+      17,
+      27
+     ],
+     "share": 0.215
+    },
+    {
+     "hex": "#482E2B",
+     "rgb": [
+      72,
+      46,
+      43
+     ],
+     "share": 0.17
+    },
+    {
+     "hex": "#BDB3B3",
+     "rgb": [
+      189,
+      179,
+      179
+     ],
+     "share": 0.08
+    }
+   ],
+   "luminance": 0.339,
+   "contrast": 0.201,
+   "saturation": 0.18,
+   "warmth": 0.142,
+   "hue": 19,
+   "hue_concentration": 0.943,
+   "night_guess": true,
+   "vivid_spots": [
+    {
+     "hex": "#80442B",
+     "rgb": [
+      128,
+      68,
+      43
+     ],
+     "share": 0.103
+    },
+    {
+     "hex": "#9F673F",
+     "rgb": [
+      159,
+      103,
+      63
+     ],
+     "share": 0.081
+    },
+    {
+     "hex": "#C3934B",
+     "rgb": [
+      195,
+      147,
+      75
+     ],
+     "share": 0.045
+    }
+   ]
+  },
+  {
+   "file": "img-2624.jpg",
+   "src": "img-2624",
+   "w": 1067,
+   "h": 1600,
+   "orientation": "portrait",
+   "palette": [
+    {
+     "hex": "#083F87",
+     "rgb": [
+      8,
+      63,
+      135
+     ],
+     "share": 0.278
+    },
+    {
+     "hex": "#A18360",
+     "rgb": [
+      161,
+      131,
+      96
+     ],
+     "share": 0.24
+    },
+    {
+     "hex": "#C9A97D",
+     "rgb": [
+      201,
+      169,
+      125
+     ],
+     "share": 0.22
+    },
+    {
+     "hex": "#151619",
+     "rgb": [
+      21,
+      22,
+      25
+     ],
+     "share": 0.148
+    },
+    {
+     "hex": "#6E5C49",
+     "rgb": [
+      110,
+      92,
+      73
+     ],
+     "share": 0.114
+    }
+   ],
+   "luminance": 0.392,
+   "contrast": 0.222,
+   "saturation": 0.291,
+   "warmth": 0.001,
+   "hue": 218,
+   "hue_concentration": 0.107,
+   "night_guess": false,
+   "vivid_spots": [
+    {
+     "hex": "#023983",
+     "rgb": [
+      2,
+      57,
+      131
+     ],
+     "share": 0.133
+    },
+    {
+     "hex": "#1967B7",
+     "rgb": [
+      25,
+      103,
+      183
+     ],
+     "share": 0.058
+    },
+    {
+     "hex": "#A47649",
+     "rgb": [
+      164,
+      118,
+      73
+     ],
+     "share": 0.015
+    }
+   ]
+  },
+  {
+   "file": "img-2627.jpg",
+   "src": "img-2627",
+   "w": 1600,
+   "h": 1067,
+   "orientation": "landscape",
+   "palette": [
+    {
+     "hex": "#8B6B49",
+     "rgb": [
+      139,
+      107,
+      73
+     ],
+     "share": 0.244
+    },
+    {
+     "hex": "#6D5338",
+     "rgb": [
+      109,
+      83,
+      56
+     ],
+     "share": 0.233
+    },
+    {
+     "hex": "#AA875E",
+     "rgb": [
+      170,
+      135,
+      94
+     ],
+     "share": 0.231
+    },
+    {
+     "hex": "#CAA679",
+     "rgb": [
+      202,
+      166,
+      121
+     ],
+     "share": 0.17
+    },
+    {
+     "hex": "#403328",
+     "rgb": [
+      64,
+      51,
+      40
+     ],
+     "share": 0.121
+    }
+   ],
+   "luminance": 0.455,
+   "contrast": 0.147,
+   "saturation": 0.252,
+   "warmth": 0.245,
+   "hue": 31,
+   "hue_concentration": 0.969,
+   "night_guess": false,
+   "vivid_spots": [
+    {
+     "hex": "#7F5C3B",
+     "rgb": [
+      127,
+      92,
+      59
+     ],
+     "share": 0.09
+    },
+    {
+     "hex": "#977149",
+     "rgb": [
+      151,
+      113,
+      73
+     ],
+     "share": 0.048
+    },
+    {
+     "hex": "#184377",
+     "rgb": [
+      24,
+      67,
+      119
+     ],
+     "share": 0.007
+    }
+   ]
+  },
+  {
+   "file": "img-2637.jpg",
+   "src": "img-2637",
+   "w": 1600,
+   "h": 1067,
+   "orientation": "landscape",
+   "palette": [
+    {
+     "hex": "#998A77",
+     "rgb": [
+      153,
+      138,
+      119
+     ],
+     "share": 0.258
+    },
+    {
+     "hex": "#805B47",
+     "rgb": [
+      128,
+      91,
+      71
+     ],
+     "share": 0.242
+    },
+    {
+     "hex": "#4C3C39",
+     "rgb": [
+      76,
+      60,
+      57
+     ],
+     "share": 0.21
+    },
+    {
+     "hex": "#221A1A",
+     "rgb": [
+      34,
+      26,
+      26
+     ],
+     "share": 0.18
+    },
+    {
+     "hex": "#B3BDC8",
+     "rgb": [
+      179,
+      189,
+      200
+     ],
+     "share": 0.109
+    }
+   ],
+   "luminance": 0.392,
+   "contrast": 0.206,
+   "saturation": 0.155,
+   "warmth": 0.1,
+   "hue": 22,
+   "hue_concentration": 0.718,
+   "night_guess": false,
+   "vivid_spots": [
+    {
+     "hex": "#8E5F41",
+     "rgb": [
+      142,
+      95,
+      65
+     ],
+     "share": 0.048
+    },
+    {
+     "hex": "#B9A043",
+     "rgb": [
+      185,
+      160,
+      67
+     ],
+     "share": 0.035
+    },
+    {
+     "hex": "#941F20",
+     "rgb": [
+      148,
+      31,
+      32
+     ],
+     "share": 0.034
+    }
+   ]
+  },
+  {
+   "file": "img-2640.jpg",
+   "src": "img-2640",
+   "w": 1067,
+   "h": 1600,
+   "orientation": "portrait",
+   "palette": [
+    {
+     "hex": "#1A1814",
+     "rgb": [
+      26,
+      24,
+      20
+     ],
+     "share": 0.268
+    },
+    {
+     "hex": "#513B2E",
+     "rgb": [
+      81,
+      59,
+      46
+     ],
+     "share": 0.241
+    },
+    {
+     "hex": "#7E6D5C",
+     "rgb": [
+      126,
+      109,
+      92
+     ],
+     "share": 0.21
+    },
+    {
+     "hex": "#EFF4F6",
+     "rgb": [
+      239,
+      244,
+      246
+     ],
+     "share": 0.159
+    },
+    {
+     "hex": "#A9A4A2",
+     "rgb": [
+      169,
+      164,
+      162
+     ],
+     "share": 0.123
+    }
+   ],
+   "luminance": 0.412,
+   "contrast": 0.3,
+   "saturation": 0.111,
+   "warmth": 0.066,
+   "hue": 25,
+   "hue_concentration": 0.729,
+   "night_guess": false,
+   "vivid_spots": [
+    {
+     "hex": "#7E412B",
+     "rgb": [
+      126,
+      65,
+      43
+     ],
+     "share": 0.038
+    },
+    {
+     "hex": "#9E6243",
+     "rgb": [
+      158,
+      98,
+      67
+     ],
+     "share": 0.02
+    },
+    {
+     "hex": "#63923F",
+     "rgb": [
+      99,
+      146,
+      63
+     ],
+     "share": 0.008
+    }
+   ]
+  },
+  {
+   "file": "img-2652.jpg",
+   "src": "img-2652",
+   "w": 1067,
+   "h": 1600,
+   "orientation": "portrait",
+   "palette": [
+    {
+     "hex": "#31140C",
+     "rgb": [
+      49,
+      20,
+      12
+     ],
+     "share": 0.272
+    },
+    {
+     "hex": "#542916",
+     "rgb": [
+      84,
+      41,
+      22
+     ],
+     "share": 0.233
+    },
+    {
+     "hex": "#ACADB1",
+     "rgb": [
+      172,
+      173,
+      177
+     ],
+     "share": 0.202
+    },
+    {
+     "hex": "#83858C",
+     "rgb": [
+      131,
+      133,
+      140
+     ],
+     "share": 0.16
+    },
+    {
+     "hex": "#62514B",
+     "rgb": [
+      98,
+      81,
+      75
+     ],
+     "share": 0.133
+    }
+   ],
+   "luminance": 0.343,
+   "contrast": 0.222,
+   "saturation": 0.135,
+   "warmth": 0.098,
+   "hue": 16,
+   "hue_concentration": 0.944,
+   "night_guess": true,
+   "vivid_spots": [
+    {
+     "hex": "#8A5634",
+     "rgb": [
+      138,
+      86,
+      52
+     ],
+     "share": 0.014
+    },
+    {
+     "hex": "#7C3D19",
+     "rgb": [
+      124,
+      61,
+      25
+     ],
+     "share": 0.013
+    }
+   ]
+  },
+  {
+   "file": "img-2669.jpg",
+   "src": "img-2669",
+   "w": 1600,
+   "h": 1067,
+   "orientation": "landscape",
+   "palette": [
+    {
+     "hex": "#A1BFE6",
+     "rgb": [
+      161,
+      191,
+      230
+     ],
+     "share": 0.272
+    },
+    {
+     "hex": "#D6DFE8",
+     "rgb": [
+      214,
+      223,
+      232
+     ],
+     "share": 0.266
+    },
+    {
+     "hex": "#262322",
+     "rgb": [
+      38,
+      35,
+      34
+     ],
+     "share": 0.25
+    },
+    {
+     "hex": "#434346",
+     "rgb": [
+      67,
+      67,
+      70
+     ],
+     "share": 0.183
+    },
+    {
+     "hex": "#80858C",
+     "rgb": [
+      128,
+      133,
+      140
+     ],
+     "share": 0.028
+    }
+   ],
+   "luminance": 0.528,
+   "contrast": 0.307,
+   "saturation": 0.108,
+   "warmth": -0.092,
+   "hue": 214,
+   "hue_concentration": 0.954,
+   "night_guess": false,
+   "vivid_spots": []
+  },
+  {
+   "file": "img-2700.jpg",
+   "src": "img-2700",
+   "w": 1067,
+   "h": 1600,
+   "orientation": "portrait",
+   "palette": [
+    {
+     "hex": "#040506",
+     "rgb": [
+      4,
+      5,
+      6
+     ],
+     "share": 0.358
+    },
+    {
+     "hex": "#9EBBDB",
+     "rgb": [
+      158,
+      187,
+      219
+     ],
+     "share": 0.186
+    },
+    {
+     "hex": "#454D58",
+     "rgb": [
+      69,
+      77,
+      88
+     ],
+     "share": 0.156
+    },
+    {
+     "hex": "#6A778A",
+     "rgb": [
+      106,
+      119,
+      138
+     ],
+     "share": 0.155
+    },
+    {
+     "hex": "#24292E",
+     "rgb": [
+      36,
+      41,
+      46
+     ],
+     "share": 0.146
+    }
+   ],
+   "luminance": 0.28,
+   "contrast": 0.262,
+   "saturation": 0.086,
+   "warmth": -0.083,
+   "hue": 213,
+   "hue_concentration": 0.973,
+   "night_guess": true,
+   "vivid_spots": []
+  },
+  {
+   "file": "img-2706.jpg",
+   "src": "img-2706",
+   "w": 1067,
+   "h": 1600,
+   "orientation": "portrait",
+   "palette": [
+    {
+     "hex": "#676964",
+     "rgb": [
+      103,
+      105,
+      100
+     ],
+     "share": 0.269
+    },
+    {
+     "hex": "#787B84",
+     "rgb": [
+      120,
+      123,
+      132
+     ],
+     "share": 0.23
+    },
+    {
+     "hex": "#53544A",
+     "rgb": [
+      83,
+      84,
+      74
+     ],
+     "share": 0.229
+    },
+    {
+     "hex": "#383632",
+     "rgb": [
+      56,
+      54,
+      50
+     ],
+     "share": 0.159
+    },
+    {
+     "hex": "#9495AA",
+     "rgb": [
+      148,
+      149,
+      170
+     ],
+     "share": 0.113
+    }
+   ],
+   "luminance": 0.395,
+   "contrast": 0.119,
+   "saturation": 0.086,
+   "warmth": -0.006,
+   "hue": 28,
+   "hue_concentration": 0.055,
+   "night_guess": false,
+   "vivid_spots": []
+  },
+  {
+   "file": "img-2707.jpg",
+   "src": "img-2707",
+   "w": 1600,
+   "h": 1067,
+   "orientation": "landscape",
+   "palette": [
+    {
+     "hex": "#867C6F",
+     "rgb": [
+      134,
+      124,
+      111
+     ],
+     "share": 0.259
+    },
+    {
+     "hex": "#755324",
+     "rgb": [
+      117,
+      83,
+      36
+     ],
+     "share": 0.254
+    },
+    {
+     "hex": "#071A3A",
+     "rgb": [
+      7,
+      26,
+      58
+     ],
+     "share": 0.197
+    },
+    {
+     "hex": "#392B19",
+     "rgb": [
+      57,
+      43,
+      25
+     ],
+     "share": 0.164
+    },
+    {
+     "hex": "#3F75AE",
+     "rgb": [
+      63,
+      117,
+      174
+     ],
+     "share": 0.126
+    }
+   ],
+   "luminance": 0.316,
+   "contrast": 0.166,
+   "saturation": 0.226,
+   "warmth": 0.028,
+   "hue": 43,
+   "hue_concentration": 0.09,
+   "night_guess": true,
+   "vivid_spots": [
+    {
+     "hex": "#895614",
+     "rgb": [
+      137,
+      86,
+      20
+     ],
+     "share": 0.117
+    },
+    {
+     "hex": "#1B5997",
+     "rgb": [
+      27,
+      89,
+      151
+     ],
+     "share": 0.051
+    },
+    {
+     "hex": "#4680C3",
+     "rgb": [
+      70,
+      128,
+      195
+     ],
+     "share": 0.048
+    }
+   ]
+  },
+  {
+   "file": "img-2708.jpg",
+   "src": "img-2708",
+   "w": 1067,
+   "h": 1600,
+   "orientation": "portrait",
+   "palette": [
+    {
+     "hex": "#120B10",
+     "rgb": [
+      18,
+      11,
+      16
+     ],
+     "share": 0.275
+    },
+    {
+     "hex": "#848F97",
+     "rgb": [
+      132,
+      143,
+      151
+     ],
+     "share": 0.27
+    },
+    {
+     "hex": "#666B6E",
+     "rgb": [
+      102,
+      107,
+      110
+     ],
+     "share": 0.188
+    },
+    {
+     "hex": "#381C17",
+     "rgb": [
+      56,
+      28,
+      23
+     ],
+     "share": 0.175
+    },
+    {
+     "hex": "#603C33",
+     "rgb": [
+      96,
+      60,
+      51
+     ],
+     "share": 0.092
+    }
+   ],
+   "luminance": 0.292,
+   "contrast": 0.206,
+   "saturation": 0.112,
+   "warmth": 0.016,
+   "hue": 9,
+   "hue_concentration": 0.617,
+   "night_guess": true,
+   "vivid_spots": [
+    {
+     "hex": "#845134",
+     "rgb": [
+      132,
+      81,
+      52
+     ],
+     "share": 0.012
+    }
+   ]
+  },
+  {
+   "file": "img-2712.jpg",
+   "src": "img-2712",
+   "w": 1600,
+   "h": 1067,
+   "orientation": "landscape",
+   "palette": [
+    {
+     "hex": "#4F505E",
+     "rgb": [
+      79,
+      80,
+      94
+     ],
+     "share": 0.488
+    },
+    {
+     "hex": "#8A6337",
+     "rgb": [
+      138,
+      99,
+      55
+     ],
+     "share": 0.208
+    },
+    {
+     "hex": "#33221B",
+     "rgb": [
+      51,
+      34,
+      27
+     ],
+     "share": 0.131
+    },
+    {
+     "hex": "#72959C",
+     "rgb": [
+      114,
+      149,
+      156
+     ],
+     "share": 0.111
+    },
+    {
+     "hex": "#C6A76C",
+     "rgb": [
+      198,
+      167,
+      108
+     ],
+     "share": 0.063
+    }
+   ],
+   "luminance": 0.364,
+   "contrast": 0.144,
+   "saturation": 0.171,
+   "warmth": 0.054,
+   "hue": 28,
+   "hue_concentration": 0.455,
+   "night_guess": false,
+   "vivid_spots": [
+    {
+     "hex": "#8D5724",
+     "rgb": [
+      141,
+      87,
+      36
+     ],
+     "share": 0.087
+    },
+    {
+     "hex": "#B98643",
+     "rgb": [
+      185,
+      134,
+      67
+     ],
+     "share": 0.053
+    },
+    {
+     "hex": "#518FAF",
+     "rgb": [
+      81,
+      143,
+      175
+     ],
+     "share": 0.007
+    }
+   ]
+  },
+  {
+   "file": "img-2716.jpg",
+   "src": "img-2716",
+   "w": 1067,
+   "h": 1600,
+   "orientation": "portrait",
+   "palette": [
+    {
+     "hex": "#655A55",
+     "rgb": [
+      101,
+      90,
+      85
+     ],
+     "share": 0.242
+    },
+    {
+     "hex": "#463B36",
+     "rgb": [
+      70,
+      59,
+      54
+     ],
+     "share": 0.237
+    },
+    {
+     "hex": "#878281",
+     "rgb": [
+      135,
+      130,
+      129
+     ],
+     "share": 0.205
+    },
+    {
+     "hex": "#241D1A",
+     "rgb": [
+      36,
+      29,
+      26
+     ],
+     "share": 0.196
+    },
+    {
+     "hex": "#B2B3B5",
+     "rgb": [
+      178,
+      179,
+      181
+     ],
+     "share": 0.119
+    }
+   ],
+   "luminance": 0.361,
+   "contrast": 0.19,
+   "saturation": 0.058,
+   "warmth": 0.042,
+   "hue": 19,
+   "hue_concentration": 0.947,
+   "night_guess": false,
+   "vivid_spots": []
+  },
+  {
+   "file": "img-2753.jpg",
+   "src": "img-2753",
+   "w": 1600,
+   "h": 1067,
+   "orientation": "landscape",
+   "palette": [
+    {
+     "hex": "#10100A",
+     "rgb": [
+      16,
+      16,
+      10
+     ],
+     "share": 0.463
+    },
+    {
+     "hex": "#E62D2D",
+     "rgb": [
+      230,
+      45,
+      45
+     ],
+     "share": 0.216
+    },
+    {
+     "hex": "#5E6557",
+     "rgb": [
+      94,
+      101,
+      87
+     ],
+     "share": 0.132
+    },
+    {
+     "hex": "#480B0B",
+     "rgb": [
+      72,
+      11,
+      11
+     ],
+     "share": 0.107
+    },
+    {
+     "hex": "#C5D58A",
+     "rgb": [
+      197,
+      213,
+      138
+     ],
+     "share": 0.082
+    }
+   ],
+   "luminance": 0.241,
+   "contrast": 0.231,
+   "saturation": 0.254,
+   "warmth": 0.216,
+   "hue": 11,
+   "hue_concentration": 0.816,
+   "night_guess": true,
+   "vivid_spots": [
+    {
+     "hex": "#E82525",
+     "rgb": [
+      232,
+      37,
+      37
+     ],
+     "share": 0.175
+    },
+    {
+     "hex": "#D8855E",
+     "rgb": [
+      216,
+      133,
+      94
+     ],
+     "share": 0.054
+    },
+    {
+     "hex": "#7A3E1D",
+     "rgb": [
+      122,
+      62,
+      29
+     ],
+     "share": 0.031
+    }
+   ]
+  },
+  {
+   "file": "img-2784.jpg",
+   "src": "img-2784",
+   "w": 1600,
+   "h": 1067,
+   "orientation": "landscape",
+   "palette": [
+    {
+     "hex": "#9AA3B3",
+     "rgb": [
+      154,
+      163,
+      179
+     ],
+     "share": 0.28
+    },
+    {
+     "hex": "#514332",
+     "rgb": [
+      81,
+      67,
+      50
+     ],
+     "share": 0.226
+    },
+    {
+     "hex": "#6F6354",
+     "rgb": [
+      111,
+      99,
+      84
+     ],
+     "share": 0.207
+    },
+    {
+     "hex": "#27150B",
+     "rgb": [
+      39,
+      21,
+      11
+     ],
+     "share": 0.152
+    },
+    {
+     "hex": "#8A827C",
+     "rgb": [
+      138,
+      130,
+      124
+     ],
+     "share": 0.135
+    }
+   ],
+   "luminance": 0.405,
+   "contrast": 0.192,
+   "saturation": 0.109,
+   "warmth": 0.046,
+   "hue": 32,
+   "hue_concentration": 0.88,
+   "night_guess": false,
+   "vivid_spots": []
+  }
+ ]
+}

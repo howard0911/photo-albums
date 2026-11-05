@@ -1,0 +1,57 @@
+# Style DNA — Paris, May 2026  (final, confirmed with Howard)
+# Every decision names its source: a photo (.dna/contact.jpg number / file), a number from .dna/dna-seed.json, or Howard's answer.
+
+trip: "Paris in May: look up at stone and glass by day, sit under a red awning for something sweet, wait for the tower to light up at blue hour"   # Q1: draft accepted
+place: Paris, France
+language: English only            # Q1: no Chinese layer. The template's CJK slot carries each chapter's mood as an English italic
+evidence:   # analyze_photos.py on the 34 picks (from 305 Canon R50 frames)
+  tone: mid / contrast: normal / chroma: moderate / temperature: neutral
+  hue_spread: varied, dominant_hue: 15° / night_share: .35 / portrait_share: .5
+  accent_candidates: fiat-red #E82525 (0°, img-2753), sacre-coeur-sky #346DC1 (216°, img-2561), pizzeria-lamp #D78541 (27°, img-2524)
+  vivid_spots: notre-dame-sky #023983 (214°, img-2624), eiffel-blue-hour #083E8E (216°, img-2543), eiffel-lights #AA6628 (29°, img-2543)
+  motifs (contact.jpg): Paris sky blue (15, 16, 21, 09–12, 29/31 van Gogh blues); limestone & gilt (02, 04, 21, 22, 25);
+    iron/glass lattices overhead (03, 06, 07, 25, 27, 32); red café awnings (01, 17, 19, 33)
+
+color:      # Q3: direction A "Bleu"
+  paper: "#F6F4EF"   # tone mid, night_share .35 < .5 → light paper; +3 warm toward the limestone of 22 (img-2627 #977149), within the ≤6 rule
+  ink: "#111318"     # paper_ink.ink #121212, nudged toward the blue-hour sky so ink and accent share a family
+  accent: "#1E54CF"  # img-2543 / img-2624 sky #083E8E (216°) lifted in S/V → 222° (+6°, within ±8°). The one colour present in Stone, Gallery and Blue hour.
+                     # Hue_spread is varied → exactly one accent. Awning red (0°) rejected: too close to JAPAN's 14° orange
+  on_accent: "#F6F4EF"   # contrast 6.1:1
+type:
+  display: Bodoni Moda 900 (opsz 6..96), stretch: normal (--stretch 100%), case: upper (--case uppercase, upper:true)
+  second voice: Bodoni Moda italic (--cjk) — display doubles as text, one family only
+  why: Didone caps are the lettering of museum plaques and fashion-house mastheads along the Rivoli; the optical-size axis keeps 10px labels legible
+hero: { word: PARIS, sub: "Travel / 26 / 05", line: "Louvre · Montmartre · Cité · Orsay · Champ de Mars" }
+motion:
+  character: 柔软 (flâneur) — contrast normal, a walking trip
+  drift: .0018  follow: .05  spring: .035  damp: .88  repel: 75  gather: 1200  develop: 1700
+  ease: cubic-bezier(.4,0,.2,1)
+texture:
+  dots: line          # short brush strokes, vertical at rest like a Didone stem, stretched by velocity: the brushwork of 28–31 (Monet, van Gogh)
+  styles: [orig, point, etch, block]
+    # point: Seurat pointillism in the photo's own colours (Orsay); etch: line engraving in accent blue, darkest shadows in ink (old Paris prints, French stamps);
+    # block: k-means palette kept, it is the proof that the photos are the material
+sound:
+  scale: "[0,2,4,6,7,9,11] D Lydian"   # European city; the raised 4th gives the Debussy/Satie shimmer that matches the Orsay chapter
+  base: 62
+  presence: 1                          # Q4: default
+  new instruments: V.accordion (musette, three detuned reeds), V.celesta (sine + bright 4th partial)
+chapters:   # Q2: accepted as proposed; numbers refer to .dna/contact.jpg
+  - { en: Stone,     mood: in awe,                photos: [02, 21, 22, 15, 16, 26], ambient: "nave air + organ fifth + bells pealing down", voice: bell }
+  - { en: Lattice,   mood: light through iron,    photos: [03, 06, 07, 25, 27, 32], ambient: "high glass-hall air + celesta runs",       voice: celesta }
+  - { en: Gallery,   mood: holding breath,        photos: [04, 05, 28, 29, 30, 31], ambient: "museum hush + Gymnopédie-slow piano 3/4",  voice: keys }
+  - { en: Terrace,   mood: sitting a while,       photos: [01, 17, 18, 19, 08, 33], ambient: "café murmur + musette waltz 168 BPM",      voice: accordion }
+  - { en: Sweet,     mood: greedy,                photos: [13, 14, 20, 23, 24, 34], ambient: "pizzicato march 2/4 + counter clinks",     voice: pluck }
+  - { en: Blue hour, mood: waiting for the lights, photos: [09, 10, 11, 12],        ambient: "the Seine + Lydian pad + tower sparkle",   voice: soft high bell }
+swaps: []
+
+anti_collision_vs_JAPAN:   # need ≥4 different → 7 of 8
+  paper: "#F6F4EF vs #FFFBF7 — similar (both light), not counted"
+  accent hue: "222° blue vs 14° orange ✔"
+  display: "Bodoni Moda Didone vs Archivo wide grotesque ✔"
+  motion: "柔软 vs 利落 ✔"
+  dots: "line vs circle ✔"
+  styles: "pointillism / etching vs ink / halftone ✔"
+  scale: "Lydian vs miyako-bushi ✔"
+  instruments: "accordion / celesta / piano vs synth / pluck / keys ✔"
