@@ -1,0 +1,63 @@
+# Style DNA — Wisconsin / Lake Geneva, October 2025  (final, confirmed with Howard)
+# Every decision names its source: a photo (.dna/contact.jpg number / file), a number from .dna/dna-seed.json, or Howard's answer.
+
+trip: "October in Wisconsin: a sky that blue over two lakes, a hilltop church in between, fudge and cheese on the drive home at sunset"   # Q1: draft accepted
+place: Milwaukee · Holy Hill · Lake Geneva · Kenosha, Wisconsin, USA
+language: English only            # Q1. The template's CJK slot carries each chapter's mood in light lowercase slab
+evidence:   # analyze_photos.py on the 36 picks (from 127 Canon R50 frames; close-up selfies left out)
+  tone: mid / contrast: normal / chroma: moderate / temperature: cool
+  hue_spread: mixed (concentration .42), dominant_hue: 219° / night_share: .36 / portrait_share: .14
+  accent_candidates: cheese #D48B1C (36°, img-1296), mansion-sky #185FBC (214°, img-1290), steamboat-brick #A2543E (13°, img-1231)
+  blue count: 22 of 36 photos have vivid spots at 209–219° (polarised Midwest sky + lake)
+  gold count: cheese img-1296 #DA931F (37°), Jayne's img-1276 #B38443 (35°), stained glass img-1202 #8F6536 (32°), caramel corn img-1272 #C58150 (25°), autumn oak img-1184
+  motifs (contact.jpg): deep blue sky over everything (02–09, 13, 15, 19, 29, 32, 33); sun glitter on water (03, 04, 20, 21, 23–25, 31);
+    twin spires + stained glass (08, 09, 10–13); steamboats & piers (16–18); fudge & caramel (26–28); the cheese castle (33–36)
+
+color:      # Q3: direction B "Cheddar"
+  paper: "#F3F6F9"   # temperature cool → paper leans cool (paper_light #F6F9FC)
+  ink: "#0F1820"     # lake-deep near-black, from img-1253 water #0F2327
+  accent: "#C27C0C"  # img-1296 cheese #DA931F (37°) deepened to stand on paper → 37° (±0°); 3.1:1 on paper.
+                     # 37° is the complement of the 215° sky (178° apart); gold recurs in 5 chapters (see gold count).
+                     # Sky blue (direction A, #1F5FD6) rejected: almost the same blue as the Paris album's #1E54CF
+  on_accent: "#0F1820"   # ink on gold 5.3:1 > paper on gold 3.1:1, black on yellow like the cheese castle sign
+type:
+  display: Roboto Slab 900, stretch: normal (--stretch 100%), case: upper (--case uppercase, upper:true), thicken .01
+  second voice: Roboto Slab 300 lowercase (--cjk), one family only
+  why: slab caps are Midwest storefront lettering: Jayne's (29), Kilwins (30), Popeye's on the lake (img-1218)
+hero: { word: LAKE GENEVA, sub: "Travel / 25 / 10", line: "Milwaukee · Holy Hill · Lake Geneva · Kenosha" }   # Q1; 11 letters with a space → two lines
+motion:
+  character: 柔软, lake swell (contrast normal, a slow lakeside trip, mostly landscape frames: portrait_share .14)
+  drift: .0016  follow: .05  spring: .03  damp: .9  repel: 80  gather: 1300  develop: 1800
+  ease: cubic-bezier(.45,0,.2,1)
+texture:
+  dots: glint         # round dots, each catching the light now and then, a slow swell across the word, like sun on the water (20, 21, 23, 24, 25, 31)
+  styles: [orig, cyan, riso, block]
+    # cyan: cyanotype to the deepest photo blue #154E95 (img-1194 palette), the sky over Holy Hill
+    # riso: cheddar gold (ACCENT) + sky blue #185FBC (img-1290, the hue farthest from the gold), off-register, grain
+    # block: k-means palette kept, the proof that the photos are the material
+sound:
+  scale: "[0,2,4,7,9] D major pentatonic"   # American hymn and folk tunes (Amazing Grace) are pentatonic; differs from Paris Lydian and Tokyo yo
+  base: 62
+  presence: 1          # Q4: default
+  ring melody: opening of Amazing Grace (New Britain, public domain)
+  new instruments: V.organ (drawbar sines), V.calliope (steam pipe: sine + breath + vibrato), V.loon (gliding wail), V.gull, V.tuba (oom-pah), V.harmonica (two reeds)
+  measured peaks (median of 3, viewer open, 5 s window): Big Sky .225 · Spires .131 · Steamboats .113 · Glitter .132 · Sweet .144 · Dusk .132
+chapters:   # Q2: accepted as proposed; numbers refer to .dna/contact.jpg
+  - { en: Big Sky,    mood: wide open,    photos: [02, 03, 04, 05, 06, 07], ambient: "Lake Michigan surf + high wind + gulls, sparse plucks", voice: soft high pluck }
+  - { en: Spires,     mood: hushed,       photos: [08, 09, 13, 10, 11, 12], ambient: "nave air + slow pentatonic hymn on organ + bell",     voice: organ }
+  - { en: Steamboats, mood: holiday,      photos: [15, 16, 17, 18, 19, 32], ambient: "harbour lapping + calliope waltz 3/4 + horn",         voice: calliope }
+  - { en: Glitter,    mood: squinting,    photos: [20, 21, 22, 23, 24, 25], ambient: "boat wake + loon calls + scattered bells",           voice: soft high bell }
+  - { en: Sweet,      mood: greedy,       photos: [14, 26, 27, 28, 29, 30], ambient: "shop murmur + Wisconsin polka oom-pah 2/4",           voice: wood }
+  - { en: Dusk,       mood: driving home, photos: [31, 33, 34, 35, 36, 01], ambient: "I-94 hush + passing cars + pad + harmonica phrases",  voice: harmonica }
+swaps: []
+
+anti_collision_vs_JAPAN:   # need ≥4 different → 8 of 8
+  paper: "#F3F6F9 cool vs #FFFBF7 warm ✔"
+  accent hue: "37° cheddar gold vs 14° torii orange ✔"
+  display: "Roboto Slab vs Archivo wide grotesque ✔"
+  motion: "柔软 vs 利落 ✔"
+  dots: "glint vs circle ✔"
+  styles: "cyanotype / riso vs ink / halftone ✔"
+  scale: "major pentatonic vs miyako-bushi ✔"
+  instruments: "organ / calliope / loon / tuba / harmonica vs synth / FM bell / keys ✔"
+also_vs_this_repo: "Paris: blue 222°, Bodoni, line strokes, Lydian. Tokyo: pink 349°, Zen Old Mincho, petals, yo. Shared engine parts only: 柔软 motion with Paris, riso code with Tokyo (different inks)"
