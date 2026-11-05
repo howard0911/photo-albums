@@ -1,0 +1,68 @@
+# Style DNA — Southern California, Christmas 2025  (final, confirmed with Howard)
+# Every decision names its source: a photo (.dna/contact.jpg number / file), a number from .dna/dna-seed.json, or Howard's answer.
+
+trip: "Christmas week down the Southern California coast: rain on Malibu, red roofs in Santa Barbara, the sun coming out gold at Laguna and blue in San Diego, eating the whole way"   # Q1: draft accepted
+place: Los Angeles · Malibu · Santa Barbara · Laguna Beach · La Jolla · San Diego, California, USA
+language: English only            # Q2. The template's CJK slot carries each chapter's mood in light lowercase Overpass
+evidence:   # analyze_photos.py on the 36 picks (from 371 Canon R50 frames, Dec 25–28 2025; close-up faces and repeats left out)
+  tone: mid / contrast: normal / chroma: moderate / temperature: cool
+  hue_spread: varied (concentration .125), dominant_hue: 237° / night_share: .19 / portrait_share: .22
+  accent_candidates: tree-sky #2F8AF2 (212°, img-1774), in-n-out-tray #C41526 (354°, img-1718), fugetsu-do-bag #A44B06 (26°, img-1392)
+  weather arc (contact.jpg): grey, saturation ≤ .05 (05–08, 10–12: Malibu + Point Dume in the rain) → stucco/terracotta (14–19) → gold (23, 24, 27) → cobalt 212–216°, saturation .31–.53 (28, 29, 31–35)
+  red count: KBBQ img-1440 #A14546 (18%), In-N-Out img-1718 #961C22 (14%), crawfish img-1610 #912216, alien Santa hats img-1776 #73090F, Malibu Farm wreath bows img-1462, Balboa fountain brick img-1766 #7B4945
+  motifs: Christmas things (01, 06, 13, 20, 35, 36); Spanish Revival arches, tile and red roofs (14–19); the Pacific in three weathers (05, 07, 08, 10–12, 22–25, 28, 29); food (02–04, 09, 21, 30)
+
+color:      # Q3: direction A "Holly"
+  paper: "#F5F7F9"   # temperature cool → paper_light #F6F9FC, leaned toward the grey Malibu sky (05, img-1458 #7E8087)
+  ink: "#14161A"     # the wet basalt of Point Dume (11, img-1499 #18120E), cooled toward the paper
+  accent: "#D11F2E"  # img-1718 In-N-Out tray #C41526 (354°) lifted in S/V → 355° (+1°); 4.9:1 on paper.
+                     # Red recurs in Tinsel (35, 36), Feast (04, 21, 30) and Cobalt (34 brick): Christmas and food, the trip's two constants.
+                     # Sky blue rejected: Paris album is 222°. Tokyo album is 349° pink #D63C58 — 6° away, but this red is darker and less pink
+  on_accent: "#F5F7F9"   # paper on red 4.9:1 > ink on red 3.4:1
+  rejected_B: "#0E8A96 fountain teal (img-1766 pool, img-1664 agave) — unique, but only 2 photos carry it"
+type:
+  display: Overpass 900, stretch: normal (--stretch 100%), case: mixed (--case none, upper:false), thicken .012
+  second voice: Overpass 300 lowercase (--cjk), one family only
+  why: Overpass is a Highway Gothic revival — the green signs of US-101, PCH and I-5 that joined every chapter; road signs set place names in mixed case
+hero: { word: SoCal, sub: "Christmas / 25 / 12", line: "Los Angeles · Malibu · Santa Barbara · Laguna · San Diego" }   # Q1
+motion:
+  character: cruise — between 利落 and 柔软, a steady glide down the coast highway (contrast normal, a driving trip)
+  drift: .0024  follow: .06  spring: .045  damp: .85  repel: 70  gather: 1100  develop: 1500
+  ease: cubic-bezier(.55,0,.2,1)
+texture:
+  dots: diamond      # squares turned 45°: the courthouse stair tile (17, img-1553) and the tree star (35, img-1774); they tilt with speed, one flares now and then like a tree bulb
+  styles: [orig, tile, print, block]
+    # tile: glazed mosaic in the photo's own 8 k-means colours with paper grout, the courthouse tile (17)
+    # print: four-pull screen print, ink + two inks mixed from the photo's own mid-tones + paper, band edges at each photo's quantiles, ink a hair off-register
+    # block: k-means palette kept, the proof that the photos are the material
+sound:
+  scale: "[0,2,4,5,7,9,11] C major"   # the carols are diatonic major; differs from Lake Geneva's pentatonic, Paris Lydian, Tokyo yo
+  base: 60
+  presence: 1          # Q4: default
+  ring melody: Joy to the World (Antioch, public domain) — straight down the scale
+  carol phrases (Tinsel): Deck the Halls, Silent Night, O Come All Ye Faithful, Jingle Bells (all public domain)
+  new instruments: V.handbell, V.sleigh, V.drop, V.steel (slide guitar), V.marimba, V.gull, V.sealion, V.clack (mahjong)
+  measured peaks: >
+    Live measurement in the gstack headless browser crashes on Windows once audio runs (Lake Geneva crashes the same way), so peaks
+    were rendered offline: the same bus graph in an OfflineAudioContext, ambience at full, viewer opened at 2 s with the duck, peak over
+    the next 3 s, median of 3. SoCal: Tinsel .127 · Rain .13 · Red Roofs .12 · Golden .101 · Cobalt .119 · Feast .137 (spread 1.4×).
+    The same render gives Lake Geneva .066–.13, against its live .113–.225, so live SoCal should land ≈ .14–.25, inside .10–.32.
+chapters:   # Q2: split accepted, English names only; numbers refer to .dna/contact.jpg
+  - { en: Tinsel,    mood: cosy,        photos: [13, 06, 01, 20, 36, 35], ambient: "fire crackle + sleigh bells + handbell carol phrases",          voice: handbell }
+  - { en: Rain,      mood: hushed,      photos: [05, 07, 10, 11, 12, 08], ambient: "heavy low surf + rain hiss + grey drone, drops, low bell",       voice: soft low bell }
+  - { en: Red Roofs, mood: siesta,      photos: [14, 15, 17, 18, 16, 19], ambient: "courtyard fountain + nylon guitar Am-G-F-Em in 3/4 + mission bell", voice: nylon pluck }
+  - { en: Golden,    mood: slow warmth, photos: [22, 25, 24, 26, 23, 27], ambient: "gentle waves + held Fmaj7 + ukulele strums + slide steel",     voice: steel }
+  - { en: Cobalt,    mood: squinting,   photos: [28, 29, 31, 32, 33, 34], ambient: "fountain spray + marimba 3-3-2 + gulls + sea lions",           voice: marimba }
+  - { en: Feast,     mood: greedy,      photos: [04, 03, 02, 09, 21, 30], ambient: "dining murmur + grill hiss + walking bass + e-piano + mahjong clacks", voice: keys }
+swaps: []
+
+anti_collision_vs_JAPAN:   # need ≥4 different → 8 of 8
+  paper: "#F5F7F9 cool vs #FFFBF7 warm ✔"
+  accent hue: "355° holly red vs 14° torii orange ✔"
+  display: "Overpass (Highway Gothic), mixed case vs Archivo wide caps ✔"
+  motion: "cruise vs 利落 ✔"
+  dots: "diamond vs circle ✔"
+  styles: "tile / screen print vs ink / halftone ✔"
+  scale: "C major vs miyako-bushi ✔"
+  instruments: "handbell / sleigh bells / steel guitar / marimba vs synth / FM bell / keys ✔"
+also_vs_this_repo: "Paris: blue 222°, Bodoni, line strokes, Lydian. Tokyo: pink 349°, Zen Old Mincho, petals, yo. Lake Geneva: gold 37°, Roboto Slab, glint, major pentatonic. First mixed-case display and first diamond dots in the repo"
