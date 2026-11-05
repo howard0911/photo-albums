@@ -44,6 +44,8 @@ a{color:inherit;text-decoration:none}
 .logo{display:flex;align-items:center;gap:6px;padding:0 24px;font-weight:800;font-size:19px;letter-spacing:.01em}
 .logo .box{display:inline-grid;place-items:center;height:20px;padding:0 4px;border:2.5px solid var(--accent);
   color:var(--accent);font-size:12px;font-weight:800;line-height:1}
+.site{display:flex;align-items:center;gap:8px;padding:0 24px;border-right:1px solid var(--line);font-size:12px;font-weight:500;transition:color .25s}
+.site:hover{color:var(--accent)}
 .nav{margin-left:auto;display:flex}
 .nav a{display:flex;align-items:center;padding:0 28px;border-left:1px solid var(--line);font-size:12px;font-weight:500;
   transition:color .25s}
@@ -277,6 +279,8 @@ a{color:inherit;text-decoration:none}
 @media (max-width:700px){
   :root{--hdr:50px}
   .logo{padding:0 10px;font-size:14px}
+  .site{padding:0 10px;font-size:10px}
+  .site span{display:none}
   .nav a{padding:0 8px;font-size:10px}
   .nav [data-nav="home"]{display:none}
   .nav a.opt{display:none}
@@ -308,6 +312,7 @@ a{color:inherit;text-decoration:none}
 }
 @media (max-width:360px){
   .logo{padding:0 8px}
+  .site{padding:0 8px}
   .about-trigger{padding:0 8px}
 }
 @media (prefers-reduced-motion:reduce){
@@ -319,6 +324,7 @@ a{color:inherit;text-decoration:none}
 <body>
 
 <header class="hdr">
+  <a class="site x" href="../../albums.html" aria-label="All albums">&larr;<span>All albums</span></a>
   <a class="logo x" id="logo" href="#/" aria-label="Back to the album"></a>
   <nav class="nav x">
     <a href="#/" data-nav="home">Album</a>
@@ -1525,7 +1531,8 @@ function sndInit(){
   for (let i=0; i<cr.length; i++) cr[i] = Math.random() < .0007 ? (Math.random()*2-1)*.8 : (Math.random()*2-1)*.004;
   setInterval(sndTick, 60);
 }
-function env(g, t, a, peak, dec){ g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(peak, t+a); g.gain.exponentialRampToValueAtTime(.0001, t+a+dec); }
+// gain starts at 0 before any automation: a source that starts a sample ahead of its first event would otherwise play one sample at full gain
+function env(g, t, a, peak, dec){ g.gain.value = 0; g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(peak, t+a); g.gain.exponentialRampToValueAtTime(.0001, t+a+dec); }
 const V = {
   bell(f, t, dest, v=.16, soft=false){         // 钟：FM 合成。soft：调制深度封顶，泛音少、起音软
     const ac = A(), c = ac.createOscillator(), m = ac.createOscillator(), mg = ac.createGain(), g = ac.createGain();
@@ -1570,7 +1577,7 @@ const V = {
     const ac = A(), s = ac.createBufferSource(), fl = ac.createBiquadFilter(), g = ac.createGain();
     s.buffer = SND.noise; fl.type = "bandpass"; fl.Q.value = 1.2;
     fl.frequency.setValueAtTime(300, t); fl.frequency.exponentialRampToValueAtTime(3200, t+dur*.6); fl.frequency.exponentialRampToValueAtTime(600, t+dur);
-    g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(v, t+dur*.45); g.gain.linearRampToValueAtTime(0, t+dur);
+    g.gain.value = 0; g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(v, t+dur*.45); g.gain.linearRampToValueAtTime(0, t+dur);
     s.connect(fl).connect(g).connect(dest); s.start(t); s.stop(t+dur+.05);
   },
 };
@@ -1587,19 +1594,19 @@ Object.assign(V, {
     const ac = A(), s = ac.createBufferSource(), fl = ac.createBiquadFilter(), g = ac.createGain();
     s.buffer = SND.noise; s.loop = true; fl.type = type; fl.Q.value = q;
     fl.frequency.setValueAtTime(f0, t); fl.frequency.exponentialRampToValueAtTime(f1, t+dur*.55); fl.frequency.exponentialRampToValueAtTime(f0, t+dur);
-    g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(v, t+dur*.45); g.gain.linearRampToValueAtTime(0, t+dur);
+    g.gain.value = 0; g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(v, t+dur*.45); g.gain.linearRampToValueAtTime(0, t+dur);
     s.connect(fl).connect(g).connect(dest); s.start(t, Math.random()); s.stop(t+dur+.05);
   },
   riser(t, dest, v=.04, dur=.8, f0=200, f1=4000, root=146.8){   // 三个锯齿波叠成和弦，共振低通从 f0 扫到 f1
     const ac = A(), fl = ac.createBiquadFilter(), g = ac.createGain();
     fl.type = "lowpass"; fl.Q.value = 9; fl.frequency.setValueAtTime(f0, t); fl.frequency.exponentialRampToValueAtTime(f1, t+dur);
-    g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(v, t+dur*.85); g.gain.linearRampToValueAtTime(0, t+dur+.06);
+    g.gain.value = 0; g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(v, t+dur*.85); g.gain.linearRampToValueAtTime(0, t+dur+.06);
     fl.connect(g).connect(dest);
     [[1,0],[1,9],[1.5,-6],[.5,4]].forEach(([k,dt])=>{ const o = ac.createOscillator(); o.type = "sawtooth"; o.frequency.value = root*k; o.detune.value = dt; o.connect(fl); o.start(t); o.stop(t+dur+.1); });
   },
   vinyl(t, dest, v=.6, dur=1){
     const ac = A(), s = ac.createBufferSource(), g = ac.createGain();
-    s.buffer = SND.crackle; s.loop = true; g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(v, t+.08); g.gain.linearRampToValueAtTime(0, t+dur);
+    s.buffer = SND.crackle; s.loop = true; g.gain.value = 0; g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(v, t+.08); g.gain.linearRampToValueAtTime(0, t+dur);
     s.connect(g).connect(dest); s.start(t, Math.random()*2); s.stop(t+dur+.05);
   },
 });
@@ -1633,8 +1640,8 @@ Object.assign(V, {
   steel(f, t, dest, v=.04, dur=1.2){           // slide steel guitar: slides up into the note, then the vibrato opens out
     const ac = A(), fl = ac.createBiquadFilter(), g = ac.createGain(), vib = ac.createOscillator(), vg = ac.createGain();
     fl.type = "lowpass"; fl.frequency.value = Math.min(2400, f*5); fl.Q.value = 1.5; fl.connect(g).connect(dest);
-    g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(v, t+.012); g.gain.exponentialRampToValueAtTime(v*.35, t+.35); g.gain.exponentialRampToValueAtTime(.0001, t+dur);
-    vib.frequency.value = 5.2; vg.gain.setValueAtTime(0, t); vg.gain.linearRampToValueAtTime(f*.012, t+.4); vib.connect(vg);
+    g.gain.value = 0; g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(v, t+.012); g.gain.exponentialRampToValueAtTime(v*.35, t+.35); g.gain.exponentialRampToValueAtTime(.0001, t+dur);
+    vib.frequency.value = 5.2; vg.gain.value = 0; g.gain.setValueAtTime(0, t); vg.gain.linearRampToValueAtTime(f*.012, t+.4); vib.connect(vg);
     [["triangle",0,1],["sawtooth",4,.25]].forEach(([type,dt,a])=>{ const o = ac.createOscillator(), og = ac.createGain(); o.type = type; o.detune.value = dt; og.gain.value = a;
       o.frequency.setValueAtTime(f*.94, t); o.frequency.exponentialRampToValueAtTime(f, t+.16); vg.connect(o.frequency);
       o.connect(og).connect(fl); o.start(t); o.stop(t+dur+.05); });

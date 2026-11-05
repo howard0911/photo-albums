@@ -10,6 +10,7 @@ Interactive single-file photo albums, one per trip. Each album is a self-contain
 | [`tokyo-2026/`](tokyo-2026/README.md) | Echigo-Yuzawa & Tokyo, February 2026 | 35 | Snow 雪, Shrine 社, First bloom 桜, Glass 鏡, Bowls 麺, Lights 灯 |
 | [`lake-geneva-2025/`](lake-geneva-2025/README.md) | Milwaukee, Holy Hill & Lake Geneva, Wisconsin, October 2025 | 36 | Big Sky, Spires, Steamboats, Glitter, Sweet, Dusk |
 | [`socal-2025/`](socal-2025/README.md) | Los Angeles, Malibu, Santa Barbara, Laguna Beach & San Diego, Christmas 2025 | 36 | Tinsel, Rain, Red Roofs, Golden, Cobalt, Feast |
+| [`los-angeles-2025/`](los-angeles-2025/README.md) | Santa Monica, Venice, Anaheim, the Getty, Hollywood, Griffith Park, Beverly Hills & Melrose, July 2025 | 36 | Boardwalk, Make-Believe, Travertine, Signs, Pink, Sundown |
 
 Each album's README covers its interactions, sound design and how to swap photos.
 
