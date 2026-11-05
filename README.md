@@ -41,6 +41,21 @@ Then open http://localhost:8765. Fonts load from Google Fonts on first visit.
 
 Albums are generated with the `photo-album` Claude Code skill: point it at a folder of trip photos and it produces a new `<city>-<year>/` folder in this layout. Its `prepare_photos.py` builds `photos/sq/`, `photos/full/` and `photos/tints.js`; on Windows run it with `PYTHONUTF8=1`.
 
+The skill does not know about the main site, so after generating or regenerating an album, add the back link to its header by hand. It is the first child of `<header class="hdr">`, styled like the nav cells and collapsing to the arrow on phones:
+
+```html
+<a class="site x" href="../../albums.html" aria-label="All albums">&larr;<span>All albums</span></a>
+```
+
+```css
+.site{display:flex;align-items:center;gap:8px;padding:0 24px;border-right:1px solid var(--line);font-size:12px;font-weight:500;transition:color .25s}
+.site:hover{color:var(--accent)}
+@media (max-width:700px){ .site{padding:0 10px;font-size:10px} .site span{display:none} }
+@media (max-width:360px){ .site{padding:0 8px} }
+```
+
+`../../albums.html` resolves to the album index on howard0911.github.io, where this repo is mounted at `travel/`.
+
 ## Credits and copyright
 
 - Photos © 2026 Howard. All rights reserved.
