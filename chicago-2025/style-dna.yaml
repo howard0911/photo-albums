@@ -1,0 +1,69 @@
+# Style DNA — Chicago, October 2025  (final, confirmed with Howard)
+# Every decision names its source: a photo (.dna/contact.jpg number / file), a number from .dna/dna-seed.json, or Howard's answer.
+
+trip: "One October day in Chicago: brunch under the glass roof at RH in the Gold Coast, the lagoon and the zoo in Lincoln Park, then an afternoon looking up at the Gothic towers of the University of Chicago"   # Q1: draft accepted
+place: Gold Coast · Lincoln Park · Lincoln Park Zoo · Hyde Park (University of Chicago), Chicago, USA
+language: English only            # Q2. The template's CJK slot carries each chapter's mood in lowercase Grenze
+evidence:   # analyze_photos.py on the 36 picks (from 66 Canon R50 frames, all on Oct 8 2025, 10:24–16:50; the selfie, posed shots, people on benches and repeats left out)
+  tone: mid / contrast: normal / chroma: moderate / temperature: cool
+  hue_spread: varied (concentration .243), dominant_hue: 200° / night_share: .47 / portrait_share: .17
+  night_share note: no night photo at all. The .47 is backlight: towers, gates and the atrium roof shot against the sun (02, 03, 10, 11, 28, 35), so paper stays light
+  accent_candidates: chapel-sky #0961C3 (212°, img-1358, share .367), lantern-brick #CB6A24 (25°, img-1304), ivy-olive #84883C (63°, img-1358)
+  sky count: cobalt sky is a vivid spot in 17 of 36 photos (13, 15, 17, 22, 25, 28–31, 33, 35, 36 …), img-1358 #0861C2 36% of the frame, img-1364 #0558BC 24%
+  motifs (contact.jpg): looking up (02, 11, 28, 30, 33, 35, 36); pointed Gothic arches (02, 05, 27, 28, 36); iron and glass lattices (02, 03, 10, 11, 29); ivy (25, 26, 31, 32); brick (04, 05, 20)
+
+color:      # Q3: direction A "October sky"
+  paper: "#F5F8FB"   # temperature cool → paper_light #F6F9FC, nudged toward the limestone of Rockefeller Chapel (36, img-1364)
+  ink: "#12151B"     # paper_ink #121212, nudged toward the backlit towers (30, 35)
+  accent: "#0B63C0"  # chapel sky img-1364 #0558BC / img-1358 #0961C3 (212°) → 211° (−1°); 5.5:1 on paper.
+                     # Paris is 222° royal blue, 11° away: the closest sibling; the fonts, dots and sound keep them apart
+  on_accent: "#F5F8FB"   # paper on cobalt 5.5:1
+  rejected_B: "#B5561E lantern brick (img-1304) — 8° from JAPAN's vermilion, and a small colour in most frames"
+type:
+  display: Grenze Gotisch 900, stretch: normal (--stretch 100%), case: mixed (--case none, upper:false), thicken .012
+  second voice and body: Grenze 400–700 (--cjk); the Gothic face is kept to the dot word, logo, titles, text tile, curtain and About name
+  why: a readable Gothic letter, like the Collegiate Gothic of the campus (25–28, 33–36); mixed case because Gothic capitals in a row are hard to read
+  engine note: mixed case has descenders (the g of Chicago, the p of Spires, the y of Ivy). DESC = .24 em of room under the last baseline in
+    wordPoints and sampleDots; the size cap still counts only the letters, so the word stays as large as before
+hero: { word: Chicago, sub: "Visiting / 25 / 10", line: "Gold Coast · Lincoln Park · Lincoln Park Zoo · Hyde Park" }   # Q1
+motion:
+  character: stately — an unhurried day of looking up; slow to start, steady, no overshoot (between 柔软 and 利落)
+  drift: .0022  follow: .06  spring: .05  damp: .86  repel: 65  gather: 1150  develop: 1500
+  ease: cubic-bezier(.5,0,.25,1)
+texture:
+  dots: lancet       # small pointed arches: the chapel windows (36, img-1364) and the gate arch (28, img-1349); upright at rest, they lean with the push and stretch tall with speed
+  styles: [orig, glass, cutout, block]
+    # glass: leaded stained glass — jittered-grid panes, each one of six colours of the photo's own palette lit from behind, lead in INK (36; the atrium roof 02, 11)
+    # cutout: backlit silhouette — shadows in INK, mid-tones deep cobalt, light as a sky fading from ACCENT; cuts at the photo's .42 / .72 luminance quantiles (30, 35)
+    # block: k-means palette kept, the proof that the photos are the material
+sound:
+  scale: "[0,2,3,5,7,9,10] D Dorian"   # the cool minor of modal jazz; no sibling album uses it (JAPAN miyako-bushi, Paris Lydian, Tokyo yo, Lake Geneva pentatonic, SoCal major, LA Mixolydian)
+  base: 62
+  presence: 1          # Q4: default — a calm day
+  ring melody: an original Dorian tune on the carillon (no borrowed tune)
+  new instruments: V.carillon (bronze bell with the minor-third tierce; Rockefeller Chapel has a carillon), V.crystal (chandelier prisms), V.bass (upright pizzicato),
+    V.brush, V.clink, V.reed (clarinet — Benny Goodman was a Chicago kid), V.honk (flamingos, and higher, ducks), V.vibes, V.crow
+  measured peaks: >
+    Offline render (the gstack headless browser crashes on Windows once live audio runs): the same bus graph in an OfflineAudioContext,
+    ambience at full presence, viewer opened at 2 s with the duck, peak over the next 3 s, median of 3.
+    Atrium .105 · Brunch .156 · Lagoon .107 · Zoo .151 · Ivy .137 · Spires .088 (spread 1.8×). Spires first measured .054 → bells raised.
+    The same render gives Lake Geneva .066–.13 against its live .113–.225, so live Chicago should land ≈ .15–.27, inside .10–.32.
+chapters:   # Q2: accepted as proposed; numbers refer to .dna/contact.jpg
+  - { en: Atrium,  mood: hushed,    photos: [02, 04, 03, 05, 11, 10], ambient: "courtyard fountain + hushed room + chandelier crystals + slow piano chords",        voice: crystal }
+  - { en: Brunch,  mood: unhurried, photos: [06, 08, 07, 09, 01, 24], ambient: "café murmur + cutlery + jazz trio at 96: walking upright bass, brushes, piano",     voice: piano }
+  - { en: Lagoon,  mood: breezy,    photos: [17, 15, 14, 16, 13, 12], ambient: "wind over open water + lapping + clarinet phrases, ducks, birds",                  voice: clarinet }
+  - { en: Zoo,     mood: curious,   photos: [23, 18, 19, 20, 21, 22], ambient: "visiting crowd + birds + flamingo honks + a skipping marimba tune",               voice: marimba }
+  - { en: Ivy,     mood: studious,  photos: [26, 25, 27, 28, 32, 31], ambient: "leaves + a slow solo bass line + vibraphone dyads + now and then a crow",         voice: vibraphone }
+  - { en: Spires,  mood: awed,      photos: [36, 35, 33, 34, 29, 30], ambient: "high air round the tower + low organ hum + carillon changes",                     voice: carillon }
+swaps: []
+
+anti_collision_vs_JAPAN:   # need ≥4 different → 7 of 8
+  paper: "#F5F8FB cool vs #FFFBF7 warm ✔"
+  accent hue: "211° cobalt vs 14° orange ✔"
+  display: "Grenze Gotisch, mixed case vs Archivo wide caps ✔"
+  motion: "stately vs 利落 ✔"
+  dots: "lancet vs circle ✔"
+  styles: "stained glass / cutout vs ink / halftone ✔"
+  scale: "Dorian vs miyako-bushi ✔"
+  instruments: "carillon / upright bass / clarinet vs synth / FM bell / keys — bells on both sides, not counted"
+also_vs_this_repo: "Paris blue 222° (Bodoni, brush-stroke dots, Lydian), Tokyo rose 349°, Lake Geneva gold 37°, SoCal red 355°, LA magenta 330° (Big Shoulders, stars, Mixolydian)"

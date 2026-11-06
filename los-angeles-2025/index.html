@@ -1623,7 +1623,7 @@ Object.assign(V, {
     const ac = A(), fl = ac.createBiquadFilter(), g = ac.createGain(), vib = ac.createOscillator(), vg = ac.createGain();
     fl.type = "lowpass"; fl.frequency.setValueAtTime(Math.min(4200, f*7), t); fl.frequency.exponentialRampToValueAtTime(Math.min(1800, f*3), t+dur); fl.Q.value = 2;
     fl.connect(g).connect(dest); env(g, t, .003, v, dur);
-    vib.frequency.value = 6; vg.gain.value = 0; g.gain.setValueAtTime(0, t); vg.gain.linearRampToValueAtTime(f*.01, t + dur*.6); vib.connect(vg);
+    vib.frequency.value = 6; vg.gain.value = 0; vg.gain.setValueAtTime(0, t); vg.gain.linearRampToValueAtTime(f*.01, t + dur*.6); vib.connect(vg);
     [["sawtooth",0,.7],["square",5,.3]].forEach(([type,dt,a])=>{ const o = ac.createOscillator(), og = ac.createGain(); o.type = type; o.frequency.value = f; o.detune.value = dt; og.gain.value = a;
       vg.connect(o.frequency); o.connect(og).connect(fl); o.start(t); o.stop(t+dur+.05); });
     vib.start(t); vib.stop(t+dur+.05);
@@ -1657,7 +1657,7 @@ Object.assign(V, {
     const hold = Math.max(t+.06, t+dur-.08);
     o.type = "sawtooth"; o.frequency.value = f; lp.type = "lowpass"; lp.frequency.value = Math.min(3000, f*4); lp.Q.value = 1;
     bp.type = "peaking"; bp.frequency.value = 1500; bp.Q.value = 2; bp.gain.value = 9;
-    vib.frequency.value = 5.4; vg.gain.value = 0; g.gain.setValueAtTime(0, t); vg.gain.linearRampToValueAtTime(f*.008, t + Math.max(.1, dur*.7)); vib.connect(vg).connect(o.frequency);
+    vib.frequency.value = 5.4; vg.gain.value = 0; vg.gain.setValueAtTime(0, t); vg.gain.linearRampToValueAtTime(f*.008, t + Math.max(.1, dur*.7)); vib.connect(vg).connect(o.frequency);
     g.gain.value = 0; g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(v, t+.04); g.gain.setValueAtTime(v*.85, hold); g.gain.linearRampToValueAtTime(0, hold+.1);
     o.connect(lp).connect(bp).connect(g).connect(dest);
     o.start(t); vib.start(t); o.stop(hold+.12); vib.stop(hold+.12);

@@ -11,6 +11,7 @@ Interactive single-file photo albums, one per trip. Each album is a self-contain
 | [`lake-geneva-2025/`](lake-geneva-2025/README.md) | Milwaukee, Holy Hill & Lake Geneva, Wisconsin, October 2025 | 36 | Big Sky, Spires, Steamboats, Glitter, Sweet, Dusk |
 | [`socal-2025/`](socal-2025/README.md) | Los Angeles, Malibu, Santa Barbara, Laguna Beach & San Diego, Christmas 2025 | 36 | Tinsel, Rain, Red Roofs, Golden, Cobalt, Feast |
 | [`los-angeles-2025/`](los-angeles-2025/README.md) | Santa Monica, Venice, Anaheim, the Getty, Hollywood, Griffith Park, Beverly Hills & Melrose, July 2025 | 36 | Boardwalk, Make-Believe, Travertine, Signs, Pink, Sundown |
+| [`chicago-2025/`](chicago-2025/README.md) | Chicago: the Gold Coast, Lincoln Park & its zoo, and the University of Chicago, October 2025 | 36 | Atrium, Brunch, Lagoon, Zoo, Ivy, Spires |
 
 Each album's README covers its interactions, sound design and how to swap photos.
 
